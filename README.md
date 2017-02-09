@@ -1,6 +1,8 @@
 # wordpress-vagrant
 A vagrant image of a wordpress blog. 
 
+> THIS IS NOT A PRODUCTION ENVIRONMENT. THIS IS NOT "SECURE". USE IT ONLY FOR DEVELOPMENT
+
 ## start 
 
 ```
