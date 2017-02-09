@@ -4,7 +4,7 @@ apt-get update
 
 sudo apt-get install -y language-pack-it
 
-apt-get install -y apache2 
+apt-get install -y apache2 php-soap
 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password password'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password password'
@@ -23,4 +23,6 @@ cat /vagrant/wordpress.sql | sudo mysql --defaults-extra-file=/etc/mysql/debian.
 
 sudo a2ensite wordpress
 sudo systemctl restart apache2.service
+
+sudo chown -R www-data:www-data /usr/share/wordpress
 

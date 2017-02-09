@@ -1,4 +1,4 @@
-drop database if exists wordpress;
+drop database wordpress;
 CREATE DATABASE wordpress;
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
 ON wordpress.*
