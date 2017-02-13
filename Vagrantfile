@@ -39,8 +39,8 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-config.vm.synced_folder "html/", "/var/www/html/",
-  owner: "www-data", group: "www-data"
+	config.vm.synced_folder "wp-content/", "/vagrant/wp-content",
+  	owner: "www-data", group: "www-data"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
